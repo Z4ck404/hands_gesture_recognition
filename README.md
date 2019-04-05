@@ -1,2 +1,7 @@
 # hands_gesture_recognition
-implementing a model to recognize hands gestures in order to translate hands signal to english 
+implementing a cnn model  uding keras to recognize hands gestures .
+# requirements : 
+```
+pip install Keras
+pip install numpy
+```
