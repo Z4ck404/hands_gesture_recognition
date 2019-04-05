@@ -40,14 +40,11 @@ classifier.fit_generator(training_set,
                          validation_data = test_set,
                          validation_steps = 200)
 '''
-# Part 3 - Making new predictions : 
-test_image = image.load_img('hands_gesture_recognition/cat_or_dog_1.jpg', target_size = (150, 150))
+# Making new predictions : 
+test_image = image.load_img(''' path here of the image''', target_size = (150, 150))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
 training_set.class_indices
-if result[0][0] == 1:
-    prediction = 'dog'
-else:
-    prediction = 'cat'
+
     '''
